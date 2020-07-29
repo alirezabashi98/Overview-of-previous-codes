@@ -1,5 +1,7 @@
 package com.example.myapplication.Adapter
 
+import android.app.Activity
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,11 +9,13 @@ import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.DataClass.recyDataClass
 import com.example.myapplication.R
+import com.example.myapplication.TestEditText
 
 class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adapter<adapter_list_code.recyViewHolder>(){
 
     inner class recyViewHolder(view:View):RecyclerView.ViewHolder(view){
         val btn = view.findViewById<Button>(R.id.btn_custom_list)
+        val context = view.context
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): recyViewHolder {
@@ -24,7 +28,7 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
         holder.btn.text = data[position].name
         holder.btn.setOnClickListener {
             when (position){
-                0 -> {}
+                0 -> {holder.context.startActivity(Intent(holder.context,TestEditText::class.java))}
                 1 -> {}
                 2 -> {}
                 3 -> {}
