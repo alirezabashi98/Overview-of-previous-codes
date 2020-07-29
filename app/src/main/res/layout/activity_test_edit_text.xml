@@ -1,42 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".TestEditText"
     android:layout_gravity="center"
     android:gravity="center"
-    android:orientation="vertical">
-
-    <CheckBox
-        android:id="@+id/CheckBox_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox 1"
-        android:buttonTint="#F44336"
-        app:buttonTint="#F44336"
-        android:textColor="#F44336"
-        android:layout_margin="5dp"/>
-
-    <CheckBox
-        android:id="@+id/CheckBox_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox 1"
-        android:buttonTint="#FF9800"
-        app:buttonTint="#FF9800"
-        android:textColor="#FF9800"
-        android:layout_margin="5dp"/>
-
-    <CheckBox
-        android:id="@+id/CheckBox_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox 1"
-        android:buttonTint="#2196F3"
-        app:buttonTint="#2196F3"
-        android:textColor="#2196F3"
-        android:layout_margin="5dp"/>
-
-</LinearLayout>
+    android:orientation="vertical" />

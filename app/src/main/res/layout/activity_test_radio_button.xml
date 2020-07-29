@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".testRadioButton">
+    tools:context=".testRadioButton"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/RadioButton_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton 1"
+            android:textColor="#2196F3"
+            android:buttonTint="#2196F3"
+            app:buttonTint="#2196F3"
+            android:layout_margin="5dp"/>
+
+        <RadioButton
+            android:id="@+id/RadioButton_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton 2"
+            android:textColor="#F44336"
+            android:buttonTint="#F44336"
+            app:buttonTint="#F44336"
+            android:layout_margin="5dp"/>
+
+        <RadioButton
+            android:id="@+id/RadioButton_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton 4"
+            android:textColor="#4CAF50"
+            android:buttonTint="#4CAF50"
+            app:buttonTint="#4CAF50"
+            android:layout_margin="5dp"/>
+
+    </RadioGroup>
+
+</LinearLayout>
