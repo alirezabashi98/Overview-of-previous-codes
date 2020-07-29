@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.DataClass.recyDataClass
 import com.example.myapplication.R
 import com.example.myapplication.TestEditText
+import com.example.myapplication.testCheckBox
 import com.example.myapplication.testRadioButton
 
 class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adapter<adapter_list_code.recyViewHolder>(){
@@ -31,7 +32,7 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
             when (position){
                 0 -> {holder.context.startActivity(Intent(holder.context,TestEditText::class.java))}
                 1 -> {holder.context.startActivity(Intent(holder.context,testRadioButton::class.java))}
-                2 -> {}
+                2 -> {holder.context.startActivity(Intent(holder.context,testCheckBox::class.java))}
                 3 -> {}
                 4 -> {}
             }
