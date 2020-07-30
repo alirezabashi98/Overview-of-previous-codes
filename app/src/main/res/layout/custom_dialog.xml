@@ -1,10 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layoutDirection="ltr"
-    android:textDirection="ltr">
+    android:textDirection="ltr"
+    android:background="@color/colorWhit">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/btn_customDialog_exit"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/style_exit"/>
+
+        <Button
+            android:id="@+id/btn_customDialog_minimize1"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/style_minimize_1"/>
+
+        <Button
+            android:id="@+id/btn_customDialog_minimize2"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/style_minimize_2"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:text="Do you want to get out?"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_customDialog_no"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorGreen"
+            android:text="No"
+            android:textColor="@color/colorWhit"/>
+
+        <Button
+            android:id="@+id/btn_customDialog_yes"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorRed"
+            android:text="Yes"
+            android:textColor="@color/colorWhit"/>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

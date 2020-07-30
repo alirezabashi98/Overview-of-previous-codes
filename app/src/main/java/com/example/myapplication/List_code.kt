@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.Adapter.adapter_list_code
@@ -27,8 +28,21 @@ class List_code : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        super.onBackPressed()
-      val dialog = Dialog(this)
+//        super.onBackPressed()
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.custom_dialog)
+        val exit = dialog.findViewById<Button>(R.id.btn_customDialog_exit)
+        val min1 = dialog.findViewById<Button>(R.id.btn_customDialog_minimize1)
+        val min2 = dialog.findViewById<Button>(R.id.btn_customDialog_minimize2)
+        val no = dialog.findViewById<Button>(R.id.btn_customDialog_no)
+        val yes = dialog.findViewById<Button>(R.id.btn_customDialog_yes)
+        exit.setOnClickListener { finishAffinity() }
+        min1.setOnClickListener { dialog.cancel() }
+        min2.setOnClickListener { dialog.cancel() }
+        no.setOnClickListener { dialog.cancel() }
+        yes.setOnClickListener { finishAffinity() }
+        dialog.show()
+
 
     }
 }
