@@ -4,4 +4,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:textAllCaps="false" />
+    android:textAllCaps="false"
+    android:background="@drawable/style_btn"
+    android:layout_margin="10dp"/>
