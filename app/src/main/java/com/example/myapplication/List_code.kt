@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
@@ -22,6 +23,12 @@ class List_code : AppCompatActivity() {
         )
         recyclerView_list_code.layoutManager = LinearLayoutManager(this)
         recyclerView_list_code.adapter = adapter_list_code(list)
+
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+      val dialog = Dialog(this)
 
     }
 }
