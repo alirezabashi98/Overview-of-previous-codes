@@ -4,6 +4,10 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+    <color name="colorWhit">#FFFFFF</color>
+    <color name="colorWhit_50">#EAEAEA</color>
+    <color name="colorWhit_100">#DCDCDC</color>
+
 <!--    material desing colors  -->
 <!--    Link : https://www.materialui.co/colors  -->
 <!--    Color Red   -->
