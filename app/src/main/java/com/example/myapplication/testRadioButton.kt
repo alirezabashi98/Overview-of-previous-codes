@@ -12,7 +12,7 @@ class testRadioButton : AppCompatActivity() {
 
     }
 
-    fun onClick(v:View){
+    fun onClick_RadioButton(v:View){
         when(v.id){
             R.id.RadioButton_1 -> {Toast.makeText(this,"RadioButton 1",Toast.LENGTH_SHORT).show()}
             R.id.RadioButton_2 -> {Toast.makeText(this,"RadioButton 2",Toast.LENGTH_SHORT).show()}

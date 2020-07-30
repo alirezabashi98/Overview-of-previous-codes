@@ -16,7 +16,7 @@
 
         <RadioButton
             android:id="@+id/RadioButton_1"
-            android:onClick="onClick"
+            android:onClick="onClick_RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="RadioButton 1"
@@ -27,7 +27,7 @@
 
         <RadioButton
             android:id="@+id/RadioButton_2"
-            android:onClick="onClick"
+            android:onClick="onClick_RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="RadioButton 2"
@@ -38,7 +38,7 @@
 
         <RadioButton
             android:id="@+id/RadioButton_3"
-            android:onClick="onClick"
+            android:onClick="onClick_RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="RadioButton 4"
