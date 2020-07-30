@@ -8,6 +8,10 @@
     <color name="colorWhit_50">#EAEAEA</color>
     <color name="colorWhit_100">#DCDCDC</color>
 
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack_50">#2B2B2B</color>
+    <color name="colorBlack_100">#707070</color>
+
 <!--    material desing colors  -->
 <!--    Link : https://www.materialui.co/colors  -->
 <!--    Color Red   -->

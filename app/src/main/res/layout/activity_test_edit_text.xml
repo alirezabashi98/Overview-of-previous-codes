@@ -11,5 +11,6 @@
     android:layoutDirection="ltr"
     android:orientation="vertical"
     app:buttonTint="#FFC107"
-    android:textColor="#111"
-    android:text="test EditText"/>
+    android:textColor="@color/colorWhit_50"
+    android:text="test EditText"
+    android:background="@color/colorBlack_50"/>
