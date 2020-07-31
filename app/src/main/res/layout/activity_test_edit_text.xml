@@ -13,4 +13,5 @@
     app:buttonTint="#FFC107"
     android:textColor="@color/colorWhit_50"
     android:text="test EditText"
-    android:background="@color/colorBlack_50"/>
+    android:background="@color/colorBlack_50"
+    android:padding="15dp"/>
