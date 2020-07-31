@@ -31,7 +31,7 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 1 -> {holder.context.startActivity(Intent(holder.context,testRadioButton::class.java))}
                 2 -> {holder.context.startActivity(Intent(holder.context,testCheckBox::class.java))}
                 3 -> {holder.context.startActivity(Intent(holder.context,TestSwitch::class.java))}
-                4 -> {}
+                4 -> {holder.context.startActivity(Intent(holder.context,TestToggleButton::class.java))}
             }
         }
     }
