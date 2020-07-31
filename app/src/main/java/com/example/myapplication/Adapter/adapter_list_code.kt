@@ -33,7 +33,7 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 0 -> {holder.context.startActivity(Intent(holder.context,TestEditText::class.java))}
                 1 -> {holder.context.startActivity(Intent(holder.context,testRadioButton::class.java))}
                 2 -> {holder.context.startActivity(Intent(holder.context,testCheckBox::class.java))}
-                3 -> {}
+                3 -> {holder.context.startActivity(Intent(holder.context,testCheckBox::class.java))}
                 4 -> {}
             }
         }
