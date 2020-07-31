@@ -7,11 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.*
 import com.example.myapplication.DataClass.recyDataClass
-import com.example.myapplication.R
-import com.example.myapplication.TestEditText
-import com.example.myapplication.testCheckBox
-import com.example.myapplication.testRadioButton
 
 class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adapter<adapter_list_code.recyViewHolder>(){
 
@@ -33,7 +30,7 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 0 -> {holder.context.startActivity(Intent(holder.context,TestEditText::class.java))}
                 1 -> {holder.context.startActivity(Intent(holder.context,testRadioButton::class.java))}
                 2 -> {holder.context.startActivity(Intent(holder.context,testCheckBox::class.java))}
-                3 -> {holder.context.startActivity(Intent(holder.context,testCheckBox::class.java))}
+                3 -> {holder.context.startActivity(Intent(holder.context,TestSwitch::class.java))}
                 4 -> {}
             }
         }

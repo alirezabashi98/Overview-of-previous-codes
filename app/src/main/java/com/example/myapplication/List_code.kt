@@ -19,8 +19,8 @@ class List_code : AppCompatActivity() {
             recyDataClass("EditText"),
             recyDataClass("RadioButton"),
             recyDataClass("CheckBox"),
-            recyDataClass("switch"),
-            recyDataClass("toggleButton")
+            recyDataClass("Switch"),
+            recyDataClass("ToggleButton")
         )
         recyclerView_list_code.layoutManager = LinearLayoutManager(this)
         recyclerView_list_code.adapter = adapter_list_code(list)
