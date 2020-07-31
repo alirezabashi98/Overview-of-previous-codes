@@ -17,7 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Switch"
-        android:buttonTint="@color/colorAmber"
-        app:buttonTint="@color/colorAmber" />
+        android:thumbTint="@color/colorRed"
+        android:trackTint="@color/colorRed_A400"
+        android:textColor="@color/colorRed"/>
 
   </LinearLayout>

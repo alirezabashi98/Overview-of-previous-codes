@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.icu.number.NumberRangeFormatter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
@@ -15,7 +16,7 @@ class TestSwitch : AppCompatActivity() {
             if (test_switch.isChecked){
 //                bright theme
                 lin_switch.setBackgroundResource(R.color.colorBlack)
-                test_switch.setTextColor(ContextCompat.getColor(applicationContext,R.color.colorAmber))
+                test_switch.setTextColor(ContextCompat.getColor(applicationContext, R.color.colorWhit))
             }else{
 //                dark theme
                 lin_switch.setBackgroundResource(R.color.colorWhit)
