@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestToggleButton"></activity>
-        <activity android:name=".TestSwitch"></activity>
+        <activity android:name=".TestChronometer"></activity>
+        <activity android:name=".TestToggleButton" />
+        <activity android:name=".TestSwitch" />
         <activity android:name=".testCheckBox" />
         <activity android:name=".testRadioButton" />
         <activity android:name=".TestEditText" />

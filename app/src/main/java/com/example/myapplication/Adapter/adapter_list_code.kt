@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.*
 import com.example.myapplication.DataClass.recyDataClass
@@ -32,6 +33,8 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 2 -> {holder.context.startActivity(Intent(holder.context,testCheckBox::class.java))}
                 3 -> {holder.context.startActivity(Intent(holder.context,TestSwitch::class.java))}
                 4 -> {holder.context.startActivity(Intent(holder.context,TestToggleButton::class.java))}
+                5 -> {holder.context.startActivity(Intent(holder.context,TestChronometer::class.java))}
+                else -> {Toast.makeText(holder.context,"",Toast.LENGTH_SHORT).show()}
             }
         }
     }
