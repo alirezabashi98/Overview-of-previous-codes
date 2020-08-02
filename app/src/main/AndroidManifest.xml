@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestChronometer"></activity>
+        <activity android:name=".TestCountDownTimer"></activity>
+        <activity android:name=".TestChronometer" />
         <activity android:name=".TestToggleButton" />
         <activity android:name=".TestSwitch" />
         <activity android:name=".testCheckBox" />
