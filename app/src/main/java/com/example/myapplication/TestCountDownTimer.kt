@@ -3,39 +3,46 @@ package com.example.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_test_count_down_timer.*
 import kotlin.concurrent.timer
 
 class TestCountDownTimer : AppCompatActivity() {
 
-    var mainTime = 1_000L
-    var countDownTimer: CountDownTimer? = null
+    val MAIN_VALUE = 66_000L
+    var Time_s = MAIN_VALUE
+    lateinit var countDownTimer: CountDownTimer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test_count_down_timer)
 
+        setText(Time_s)
         toggle_countDownTimer.setOnClickListener {
-            if(toggle_countDownTimer.isChecked){
+            if (toggle_countDownTimer.isChecked) {
                 runTimer()
-            }else{
-                countDownTimer?.cancel()
+            } else {
+                countDownTimer.cancel()
             }
         }
     }
 
     fun runTimer() {
-        countDownTimer = object : CountDownTimer(mainTime, 1000) {
+        countDownTimer = object : CountDownTimer(Time_s, 1_000) {
             override fun onFinish() {
-
+                setText(Time_s)
+                Time_s = MAIN_VALUE
+                toggle_countDownTimer.isChecked = false
+                Toast.makeText(this@TestCountDownTimer, "restart", Toast.LENGTH_SHORT).show()
+                setText(Time_s)
             }
 
             override fun onTick(timeOut: Long) {
-                mainTime = timeOut
-                setText(mainTime)
+                Time_s = timeOut
+                setText(Time_s)
             }
 
-        }
+        }.start()
     }
 
     fun setText(s: Long) {
