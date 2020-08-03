@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestCalculator">
+    tools:context=".TestCalculator"
+    android:orientation="vertical"
+    android:background="@color/colorWhit_50"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="35dp"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:padding="5dp"
+        android:background="@color/colorBlack_50">
+
+        <Button
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/style_exit"
+            android:layout_alignParentLeft="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:text="Calcy"
+            android:textColor="@color/colorWhit_50"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_customDialog_minimize2"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/style_minimize_2"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center|left">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22+22"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack_50"
+            android:textStyle="normal"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="22"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="+"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack_50"
+                android:textSize="25dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <Button/>
+            <Button/>
+            <Button/>
+            <Button/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

@@ -35,7 +35,8 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 4 -> {holder.context.startActivity(Intent(holder.context,TestToggleButton::class.java))}
                 5 -> {holder.context.startActivity(Intent(holder.context,TestChronometer::class.java))}
                 6 -> {holder.context.startActivity(Intent(holder.context,TestCountDownTimer::class.java))}
-                else -> {Toast.makeText(holder.context,"",Toast.LENGTH_SHORT).show()}
+                7 -> {holder.context.startActivity(Intent(holder.context,TestCalculator::class.java))}
+                else -> {Toast.makeText(holder.context,"Error",Toast.LENGTH_SHORT).show()}
             }
         }
     }
