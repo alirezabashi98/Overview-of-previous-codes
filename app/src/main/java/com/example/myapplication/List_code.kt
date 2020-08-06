@@ -24,7 +24,8 @@ class List_code : AppCompatActivity() {
             recyDataClass("Chronometer"),
             recyDataClass("CountDownTimer"),
             recyDataClass("Calculator"),
-            recyDataClass("TextInputLayout")
+            recyDataClass("TextInputLayout"),
+            recyDataClass("CustomListView")
         )
         recyclerView_list_code.layoutManager = LinearLayoutManager(this)
         recyclerView_list_code.adapter = adapter_list_code(list)

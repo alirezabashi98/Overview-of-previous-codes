@@ -37,6 +37,7 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 6 -> {holder.context.startActivity(Intent(holder.context,TestCountDownTimer::class.java))}
                 7 -> {holder.context.startActivity(Intent(holder.context,TestCalculator::class.java))}
                 8 -> {holder.context.startActivity(Intent(holder.context,TestTextInputLayout::class.java))}
+                9 -> {holder.context.startActivity(Intent(holder.context,TestCustomListView::class.java))}
                 else -> {Toast.makeText(holder.context,"Error",Toast.LENGTH_SHORT).show()}
             }
         }
