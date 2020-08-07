@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestAutoCompleteTextView"></activity>
+        <activity android:name=".TestMultiAutoCompleteTextView"></activity>
+        <activity android:name=".TestAutoCompleteTextView" />
         <activity android:name=".TestSpinner" />
         <activity android:name=".TestCustomListView" />
         <activity android:name=".TestTextInputLayout" />

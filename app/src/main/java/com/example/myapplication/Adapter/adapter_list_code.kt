@@ -39,6 +39,8 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 8 -> {holder.context.startActivity(Intent(holder.context,TestTextInputLayout::class.java))}
                 9 -> {holder.context.startActivity(Intent(holder.context,TestCustomListView::class.java))}
                 10 -> {holder.context.startActivity(Intent(holder.context,TestSpinner::class.java))}
+                11 -> {holder.context.startActivity(Intent(holder.context,TestAutoCompleteTextView::class.java))}
+                12 -> {holder.context.startActivity(Intent(holder.context,TestMultiAutoCompleteTextView::class.java))}
                 else -> {Toast.makeText(holder.context,"Error",Toast.LENGTH_SHORT).show()}
             }
         }
