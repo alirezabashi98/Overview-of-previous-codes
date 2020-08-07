@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestCustomListView"></activity>
+        <activity android:name=".TestSpinner"></activity>
+        <activity android:name=".TestCustomListView" />
         <activity android:name=".TestTextInputLayout" />
         <activity
             android:name=".TestCalculator"
