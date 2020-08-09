@@ -4,12 +4,13 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorWhit</item>
         <item name="colorPrimaryDark">@color/colorBlue_900</item>
-        <item name="colorAccent">@color/colorWhit</item>
+        <item name="colorAccent">@color/colorRed</item>
         <item name="titleTextColor">@color/colorBlue_600</item>
         <item name="color">@color/colorBlue_600</item>
     </style>
 
     <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+
     </style>
 
 </resources>

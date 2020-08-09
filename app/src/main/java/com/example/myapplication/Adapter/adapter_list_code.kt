@@ -1,6 +1,5 @@
 package com.example.myapplication.Adapter
 
-import android.app.Activity
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -41,6 +40,8 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 10 -> {holder.context.startActivity(Intent(holder.context,TestSpinner::class.java))}
                 11 -> {holder.context.startActivity(Intent(holder.context,TestAutoCompleteTextView::class.java))}
                 12 -> {holder.context.startActivity(Intent(holder.context,TestMultiAutoCompleteTextView::class.java))}
+                13 -> {holder.context.startActivity(Intent(holder.context,SnackBar::class.java))}
+                14 -> {holder.context.startActivity(Intent(holder.context,AlertDialog::class.java))}
                 else -> {Toast.makeText(holder.context,"Error",Toast.LENGTH_SHORT).show()}
             }
         }

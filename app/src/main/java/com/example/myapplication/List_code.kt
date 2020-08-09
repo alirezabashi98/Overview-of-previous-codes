@@ -16,20 +16,21 @@ class List_code : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_code)
         val list = listOf(
-            recyDataClass("EditText"),
-            recyDataClass("RadioButton"),
-            recyDataClass("CheckBox"),
-            recyDataClass("Switch"),
-            recyDataClass("ToggleButton"),
-            recyDataClass("Chronometer"),
-            recyDataClass("CountDownTimer"),
-            recyDataClass("Calculator"),
-            recyDataClass("TextInputLayout"),
-            recyDataClass("CustomListView"),
-            recyDataClass("Spinner"),
-            recyDataClass("AutoCompleteTextView"),
-            recyDataClass("MultiAutoCompleteTextView"),
-            recyDataClass("SnackBar")
+            recyDataClass("EditText"),                                     // 0
+            recyDataClass("RadioButton"),                                  // 1
+            recyDataClass("CheckBox"),                                     // 2
+            recyDataClass("Switch"),                                       // 3
+            recyDataClass("ToggleButton"),                                 // 4
+            recyDataClass("Chronometer"),                                  // 5
+            recyDataClass("CountDownTimer"),                               // 6
+            recyDataClass("Calculator"),                                   // 7
+            recyDataClass("TextInputLayout"),                              // 8
+            recyDataClass("CustomListView"),                               // 9
+            recyDataClass("Spinner"),                                      // 10
+            recyDataClass("AutoCompleteTextView"),                         // 11
+            recyDataClass("MultiAutoCompleteTextView"),                    // 12
+            recyDataClass("SnackBar"),                                     // 13
+            recyDataClass("AlertDialog")                                      // 14
         )
         recyclerView_list_code.layoutManager = LinearLayoutManager(this)
         recyclerView_list_code.adapter = adapter_list_code(list)
