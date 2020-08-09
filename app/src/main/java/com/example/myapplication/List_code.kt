@@ -28,7 +28,8 @@ class List_code : AppCompatActivity() {
             recyDataClass("CustomListView"),
             recyDataClass("Spinner"),
             recyDataClass("AutoCompleteTextView"),
-            recyDataClass("MultiAutoCompleteTextView")
+            recyDataClass("MultiAutoCompleteTextView"),
+            recyDataClass("SnackBar")
         )
         recyclerView_list_code.layoutManager = LinearLayoutManager(this)
         recyclerView_list_code.adapter = adapter_list_code(list)
