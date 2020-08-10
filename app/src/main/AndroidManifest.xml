@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoView"></activity>
+        <activity android:name=".VideoView"
+            android:theme="@style/AppTheme2"></activity>
         <activity
             android:name=".WebView"
             android:theme="@style/AppTheme2" />
