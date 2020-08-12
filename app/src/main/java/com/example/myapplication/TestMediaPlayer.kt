@@ -21,11 +21,13 @@ class TestMediaPlayer : AppCompatActivity() {
             if (is_Play){
 
                 musice.pause()
+                btn_player.text = "Pause"
                 is_Play = false
 
             }else{
 
                 musice.start()
+                btn_player.text = "Play"
                 is_Play = true
 
             }

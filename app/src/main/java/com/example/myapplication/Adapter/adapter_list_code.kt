@@ -45,6 +45,7 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 15 -> {holder.context.startActivity(Intent(holder.context,WebView::class.java))}
                 16 -> {holder.context.startActivity(Intent(holder.context,VideoView ::class.java))}
                 17 -> {holder.context.startActivity(Intent(holder.context,TestMediaPlayer ::class.java))}
+                18 -> {holder.context.startActivity(Intent(holder.context,TestTimeDatePicer ::class.java))}
                 else -> {Toast.makeText(holder.context,"Error",Toast.LENGTH_SHORT).show()}
             }
         }
