@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestTimeDatePicer"
-            android:theme="@style/AppTheme2"></activity>
+        <activity android:name=".TestTimePicer"></activity>
+        <activity
+            android:name=".TestTimeDatePicer"
+            android:theme="@style/AppTheme2" />
         <activity android:name=".TestMediaPlayer" />
         <activity
             android:name=".VideoView"

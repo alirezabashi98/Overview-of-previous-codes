@@ -34,7 +34,8 @@ class List_code : AppCompatActivity() {
             recyDataClass("WebView"),                                      // 15
             recyDataClass("VideoView"),                                    // 16
             recyDataClass("MediaPlayer"),                                  // 17
-            recyDataClass("Time DatePicer")                                // 18
+            recyDataClass("Time DatePicer"),                               // 18
+            recyDataClass("TimePicer")                                     // 19
         )
         recyclerView_list_code.layoutManager = LinearLayoutManager(this)
         recyclerView_list_code.adapter = adapter_list_code(list)
