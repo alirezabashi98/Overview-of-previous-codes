@@ -31,7 +31,7 @@ class List_code : AppCompatActivity() {
             recyDataClass("MultiAutoCompleteTextView"),                    // 12
             recyDataClass("SnackBar"),                                     // 13
             recyDataClass("AlertDialog")   ,                               // 14
-            recyDataClass("WebView"),                                       // 15
+            recyDataClass("WebView"),                                      // 15
             recyDataClass("VideoView")                                     // 16
         )
         recyclerView_list_code.layoutManager = LinearLayoutManager(this)
