@@ -47,6 +47,7 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 17 -> {holder.context.startActivity(Intent(holder.context,TestMediaPlayer ::class.java))}
                 18 -> {holder.context.startActivity(Intent(holder.context,TestTimeDatePicer ::class.java))}
                 19 -> {holder.context.startActivity(Intent(holder.context,TestTimePicer::class.java))}
+                20 -> {holder.context.startActivity(Intent(holder.context,TestTimePicer::class.java))}
                 else -> {Toast.makeText(holder.context,"Error",Toast.LENGTH_SHORT).show()}
             }
         }
