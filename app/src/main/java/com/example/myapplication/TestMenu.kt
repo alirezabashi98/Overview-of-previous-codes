@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 
 class TestMenu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,10 +13,22 @@ class TestMenu : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        return super.onCreateOptionsMenu(menu)
+
+        menuInflater.inflate(R.menu.test_menu,menu)
+
+        return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return super.onOptionsItemSelected(item)
+
+        if (item != null)
+            when(item.itemId){
+                R.id.testMenu_1 -> {Toast.makeText(this,"test menu 1",Toast.LENGTH_SHORT).show()}
+                R.id.testMenu_2 -> {Toast.makeText(this,"test menu 2",Toast.LENGTH_SHORT).show()}
+                R.id.testMenu_3 -> {Toast.makeText(this,"test menu 3",Toast.LENGTH_SHORT).show()}
+                R.id.testMenu_4 -> {Toast.makeText(this,"test menu 4",Toast.LENGTH_SHORT).show()}
+            }
+
+        return true
     }
 }
