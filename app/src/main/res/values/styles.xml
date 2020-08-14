@@ -7,11 +7,18 @@
         <item name="colorAccent">@color/colorRed</item>
         <item name="titleTextColor">@color/colorBlue_600</item>
         <item name="color">@color/colorBlue_600</item>
-        <item name="background">@color/colorAmber_500</item>
     </style>
 
     <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
 
+    </style>
+
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorBlue_300</item>
+        <item name="colorAccent">@color/colorAmber</item>
+        <item name="titleTextColor">@color/colorWhit_50</item>
+        <item name="color">@color/colorWhit_50</item>
     </style>
 
 </resources>
