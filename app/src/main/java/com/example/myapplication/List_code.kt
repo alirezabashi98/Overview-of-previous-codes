@@ -37,7 +37,8 @@ class List_code : AppCompatActivity() {
             recyDataClass("Time DatePicer"),                               // 18
             recyDataClass("TimePicer"),                                    // 19
             recyDataClass("Menu"),                                         // 20
-            recyDataClass("ToolBar")                                       // 21
+            recyDataClass("ToolBar"),                                      // 21
+            recyDataClass("GridView")                                      // 22
         )
         recyclerView_list_code.layoutManager = LinearLayoutManager(this)
         recyclerView_list_code.adapter = adapter_list_code(list)

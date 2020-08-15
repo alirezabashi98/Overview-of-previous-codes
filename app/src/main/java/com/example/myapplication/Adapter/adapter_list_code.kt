@@ -49,6 +49,7 @@ class adapter_list_code(private val data :List<recyDataClass>):RecyclerView.Adap
                 19 -> {holder.context.startActivity(Intent(holder.context,TestTimePicer::class.java))}
                 20 -> {holder.context.startActivity(Intent(holder.context,TestMenu::class.java))}
                 21 -> {holder.context.startActivity(Intent(holder.context,TestToolBar::class.java))}
+                22 -> {holder.context.startActivity(Intent(holder.context,TestToolBar::class.java))}
                 else -> {Toast.makeText(holder.context,"Error",Toast.LENGTH_SHORT).show()}
             }
         }
